@@ -95,7 +95,7 @@ export default function BibleReader() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 font-inter">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 font-inter">
       <BibleHeader
         onToggleSearch={() => setShowSearchModal(true)}
         onToggleMobileMenu={() => setShowMobileMenu(true)}

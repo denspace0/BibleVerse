@@ -70,6 +70,77 @@ export class MemStorage implements IStorage {
           { reference: "2 Corinthians 4:6", text: "God who commanded light to shine out of darkness" },
           { reference: "Psalm 33:6", text: "By the word of the Lord were the heavens made" }
         ]
+      },
+      {
+        book: "john",
+        chapter: 3,
+        verse: 16,
+        commentary: "Often called the 'Golden Text' of the Bible, this verse encapsulates the entire gospel message. It reveals God's immense love for humanity, His provision of salvation through His Son Jesus Christ, and the simple requirement of faith for eternal life. The word 'world' (Greek: kosmos) emphasizes the universal scope of God's love and Christ's sacrifice.",
+        keyThemes: ["God's Love", "Salvation", "Eternal Life", "Faith", "Universal Gospel"],
+        crossReferences: [
+          { reference: "Romans 5:8", text: "But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us." },
+          { reference: "1 John 4:9", text: "In this was manifested the love of God toward us, because that God sent his only begotten Son into the world, that we might live through him." },
+          { reference: "John 1:12", text: "But as many as received him, to them gave he power to become the sons of God, even to them that believe on his name." }
+        ]
+      },
+      {
+        book: "john",
+        chapter: 3,
+        verse: 15,
+        commentary: "This verse emphasizes that belief in Jesus Christ results in eternal life. The word 'believeth' indicates not just intellectual assent but complete trust and reliance on Christ. This eternal life begins the moment one believes and continues forever.",
+        keyThemes: ["Faith", "Eternal Life", "Salvation", "Belief in Christ"],
+        crossReferences: [
+          { reference: "John 5:24", text: "Verily, verily, I say unto you, He that heareth my word, and believeth on him that sent me, hath everlasting life..." },
+          { reference: "Romans 10:9", text: "That if thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved." }
+        ]
+      },
+      {
+        book: "matthew",
+        chapter: 1,
+        verse: 1,
+        commentary: "This opening verse introduces Jesus Christ's genealogy, emphasizing His royal lineage through David and His connection to Abraham, the father of the Jewish nation. Matthew presents Jesus as the promised Messiah who fulfills Old Testament prophecies about the coming King and Savior.",
+        keyThemes: ["Messianic Lineage", "Fulfillment of Prophecy", "Royal Heritage", "Jewish Heritage"],
+        crossReferences: [
+          { reference: "Genesis 22:18", text: "And in thy seed shall all the nations of the earth be blessed..." },
+          { reference: "2 Samuel 7:12", text: "And when thy days be fulfilled, and thou shalt sleep with thy fathers, I will set up thy seed after thee..." },
+          { reference: "Luke 3:23", text: "And Jesus himself began to be about thirty years of age, being (as was supposed) the son of Joseph..." }
+        ]
+      },
+      {
+        book: "john",
+        chapter: 1,
+        verse: 1,
+        commentary: "This profound opening parallels Genesis 1:1, establishing Jesus as the eternal Word (Logos) who existed before creation. The Word is both distinct from God ('with God') and identical to God ('was God'), introducing the concept of the Trinity. This verse affirms Christ's deity and eternal existence.",
+        keyThemes: ["Deity of Christ", "Eternal Existence", "Trinity", "Divine Word", "Pre-existence"],
+        crossReferences: [
+          { reference: "Genesis 1:1", text: "In the beginning God created the heaven and the earth." },
+          { reference: "Colossians 1:16", text: "For by him were all things created, that are in heaven, and that are in earth..." },
+          { reference: "Hebrews 1:2", text: "Hath in these last days spoken unto us by his Son, whom he hath appointed heir of all things..." }
+        ]
+      },
+      {
+        book: "psalms",
+        chapter: 23,
+        verse: 1,
+        commentary: "This beloved psalm presents God as a caring shepherd who provides for, protects, and guides His people. The imagery of shepherd and sheep was particularly meaningful in ancient Israel, where shepherding was common. David, who was himself a shepherd, speaks from personal experience of God's faithful care.",
+        keyThemes: ["God as Shepherd", "Divine Providence", "Trust", "God's Care", "Contentment"],
+        crossReferences: [
+          { reference: "John 10:11", text: "I am the good shepherd: the good shepherd giveth his life for the sheep." },
+          { reference: "Isaiah 40:11", text: "He shall feed his flock like a shepherd: he shall gather the lambs with his arm..." },
+          { reference: "Ezekiel 34:12", text: "As a shepherd seeketh out his flock in the day that he is among his sheep that are scattered..." }
+        ]
+      },
+      {
+        book: "romans",
+        chapter: 3,
+        verse: 23,
+        commentary: "This verse establishes the universal nature of sin and humanity's need for salvation. 'All have sinned' includes every person regardless of background, status, or effort. 'Fall short' means to miss the mark, like an arrow missing its target. The glory of God represents His perfect standard of righteousness.",
+        keyThemes: ["Universal Sin", "Human Depravity", "Need for Salvation", "God's Standard", "Equality in Sin"],
+        crossReferences: [
+          { reference: "Romans 6:23", text: "For the wages of sin is death; but the gift of God is eternal life through Jesus Christ our Lord." },
+          { reference: "Ecclesiastes 7:20", text: "For there is not a just man upon earth, that doeth good, and sinneth not." },
+          { reference: "1 John 1:8", text: "If we say that we have no sin, we deceive ourselves, and the truth is not in us." }
+        ]
       }
     ];
 

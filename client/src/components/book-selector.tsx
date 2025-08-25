@@ -29,9 +29,9 @@ export default function BookSelector({
 
   if (isLoading) {
     return (
-      <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 sticky top-24">
+      <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg rounded-xl shadow-xl border border-white/50 dark:border-slate-700/50 p-6 sticky top-24">
         <Skeleton className="h-6 w-48 mb-4" />
-        <div className="flex mb-4 bg-gray-100 rounded-lg p-1">
+        <div className="flex mb-4 bg-gray-100 dark:bg-slate-800 rounded-lg p-1">
           <Skeleton className="flex-1 h-8 rounded-md" />
           <Skeleton className="flex-1 h-8 rounded-md ml-1" />
         </div>
@@ -45,17 +45,17 @@ export default function BookSelector({
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 sticky top-24">
-      <h3 className="font-semibold text-gray-900 mb-4">Books of the Bible</h3>
+    <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg rounded-xl shadow-xl border border-white/50 dark:border-slate-700/50 p-6 sticky top-24">
+      <h3 className="font-bold text-gray-900 dark:text-white mb-6 text-lg">Books of the Bible</h3>
       
       {/* Testament Tabs */}
-      <div className="flex mb-4 bg-gray-100 rounded-lg p-1">
+      <div className="flex mb-6 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-slate-800 dark:to-slate-700 rounded-xl p-1 shadow-inner">
         <button
           className={cn(
-            "flex-1 py-2 px-3 text-sm font-medium rounded-md transition-colors",
+            "flex-1 py-3 px-4 text-sm font-semibold rounded-lg transition-all duration-200",
             testament === 'old' 
-              ? "bg-white text-blue-600 shadow-sm" 
-              : "text-gray-600 hover:text-gray-900"
+              ? "bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-lg transform scale-105" 
+              : "text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-white/50 dark:hover:bg-slate-800/50"
           )}
           onClick={() => onTestamentChange('old')}
           data-testid="button-old-testament"
@@ -64,10 +64,10 @@ export default function BookSelector({
         </button>
         <button
           className={cn(
-            "flex-1 py-2 px-3 text-sm font-medium rounded-md transition-colors",
+            "flex-1 py-3 px-4 text-sm font-semibold rounded-lg transition-all duration-200",
             testament === 'new' 
-              ? "bg-white text-blue-600 shadow-sm" 
-              : "text-gray-600 hover:text-gray-900"
+              ? "bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-lg transform scale-105" 
+              : "text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-white/50 dark:hover:bg-slate-800/50"
           )}
           onClick={() => onTestamentChange('new')}
           data-testid="button-new-testament"
@@ -83,10 +83,10 @@ export default function BookSelector({
             <button
               key={book.id}
               className={cn(
-                "w-full text-left px-3 py-2 text-sm rounded-md transition-colors",
+                "w-full text-left px-4 py-3 text-sm rounded-lg transition-all duration-200 font-medium",
                 selectedBook === book.id
-                  ? "bg-blue-50 text-blue-600 font-medium"
-                  : "hover:bg-gray-100 text-gray-700 hover:text-blue-600"
+                  ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg transform scale-105"
+                  : "hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-slate-800 dark:hover:to-slate-700 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md"
               )}
               onClick={() => onBookChange(book.id)}
               data-testid={`button-book-${book.id}`}
@@ -99,8 +99,8 @@ export default function BookSelector({
 
       {/* Chapter Selector */}
       {currentBook && (
-        <div className="mt-6 pt-4 border-t border-gray-200">
-          <h4 className="font-medium text-gray-900 mb-3">
+        <div className="mt-8 pt-6 border-t border-gradient-to-r from-gray-200 to-gray-300 dark:border-gray-700">
+          <h4 className="font-bold text-gray-900 dark:text-white mb-4 text-base">
             {currentBook.name} Chapters
           </h4>
           <div className="grid grid-cols-6 gap-1" data-testid="chapters-list">
@@ -108,10 +108,10 @@ export default function BookSelector({
               <button
                 key={chapterNum}
                 className={cn(
-                  "w-8 h-8 text-xs font-medium rounded border transition-colors",
+                  "w-9 h-9 text-xs font-bold rounded-lg border-2 transition-all duration-200 shadow-sm",
                   selectedChapter === chapterNum
-                    ? "border-blue-600 text-blue-600 bg-blue-50"
-                    : "border-gray-300 hover:border-blue-600 hover:text-blue-600"
+                    ? "border-blue-500 text-white bg-gradient-to-br from-blue-500 to-purple-600 shadow-lg transform scale-110"
+                    : "border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md hover:scale-105 bg-white/50 dark:bg-slate-800/50"
                 )}
                 onClick={() => onChapterChange(chapterNum)}
                 data-testid={`button-chapter-${chapterNum}`}
