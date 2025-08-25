@@ -83,5 +83,5 @@
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/bibleverse.git
+   git clone https://github.com/denspace0/BibleVerse.git
    cd bibleverse
