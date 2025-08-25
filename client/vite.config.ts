@@ -2,8 +2,8 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  root: 'client',  // Make sure Vite knows where the root folder is
   build: {
-    outDir: 'dist',  // Ensure that output is directed to the `dist` directory
+    outDir: 'dist',  // Ensure Vite builds to the dist folder
   },
-  // Add other necessary configurations here
 });
